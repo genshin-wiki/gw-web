@@ -1,7 +1,7 @@
 ---
 title: 魈
 category: 角色
-tags:
+tag:
   - 璃月
   - 风
   - 五星

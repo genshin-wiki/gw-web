@@ -1,7 +1,7 @@
 ---
 title: 钟离
 category: 角色
-tags:
+tag:
   - 璃月
   - 岩
   - 五星

@@ -1,7 +1,7 @@
 ---
 title: 温迪
 category: 角色
-tags:
+tag:
   - 蒙德
   - 风
   - 五星
