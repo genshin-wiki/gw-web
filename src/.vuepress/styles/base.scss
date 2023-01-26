@@ -1,0 +1,27 @@
+body {
+    cursor: url("/cursor.png"), auto;
+}
+
+table {
+    text-align: center !important;
+}
+
+table,
+table tr:nth-child(2n) {
+    background: transparent !important;
+    backdrop-filter: blur(16px) !important;
+}
+
+table td {
+    word-break: keep-all !important;
+    white-space: nowrap !important;
+}
+
+table th {
+    word-break: keep-all !important;
+    white-space: nowrap !important;
+}
+
+h2 {
+    border-color: transparent !important;
+}
