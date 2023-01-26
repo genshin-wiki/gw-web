@@ -11,7 +11,7 @@
 
 <script lang="ts" setup>
 import { ElTabs, ElTabPane, ElMessage } from 'element-plus'
-import { onMounted, ref } from 'vue';
+import { onMounted, onUnmounted, ref } from 'vue';
 import { dataRoot } from '../../common/consts';
 
 const props = defineProps(['name'])
@@ -50,6 +50,11 @@ onMounted(() => {
         loaded.value = true
       })
     })
+})
+
+onUnmounted(() => {
+  audio.pause()
+  audio.remove()
 })
 </script>
 
