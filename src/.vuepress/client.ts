@@ -1,4 +1,5 @@
 import { defineClientConfig } from '@vuepress/client'
+import 'element-plus/dist/index.css'
 import GlobalPlayer from './components/global-script.vue'
 
 export default defineClientConfig({

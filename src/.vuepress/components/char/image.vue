@@ -18,7 +18,7 @@ const data = ref()
 
 const activeName = ref('char-image-0')
 
-const style = document.createElement('style')
+let style: HTMLStyleElement
 
 onMounted(() => {
   fetch(`${dataRoot}/data/char/${props.name}/image.json`)
@@ -26,6 +26,7 @@ onMounted(() => {
       res.json().then((result) => {
         data.value = result
         const img = dataRoot + data.value[0].image
+        style = document.createElement('style')
         style.innerText = `body:before { background: url('${img}') center/cover;}`
         document.head.appendChild(style)
         loaded.value = true

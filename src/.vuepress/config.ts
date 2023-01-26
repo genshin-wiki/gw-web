@@ -1,7 +1,6 @@
 import { defineUserConfig } from 'vuepress'
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
 import { getDirname, path } from '@vuepress/utils'
-import bundler from './config/bundler'
 import theme from './config/theme'
 
 const __dirname = getDirname(import.meta.url)
@@ -18,6 +17,5 @@ export default defineUserConfig({
       componentsDir: path.resolve(__dirname, './components'),
     })
   ],
-  bundler,
   theme
 })
